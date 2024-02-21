@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="Gemini_Generated_Image.jpg" type="image/x-icon">
+    <title>Temperature</title>
+  </head>
+  <body>
+    <div class="wraper">
+      <label for="Fahrenheit">Fahrenheit to Celsius ( °F to °C ) :</label>
+      <input
+        onkeyup="convertFahrenheit()"
+        id="Fahrenheit"
+        type="number"
+        placeholder="°F"
+      />
+      <label for="Celsius">Celsius to Fahrenheit ( °C to °F ) :</label>
+      <input
+        onkeyup="convertCelsius()"
+        id="Celsius"
+        type="number"
+        placeholder="°C"
+      />
+    </div>
+    <div class="fahrenheit-result-container">
+    </div>
+    <div class="celsius-result-container">
+    </div>
+    <div class="show-formula">
+      <button onclick="showFormula ()" class="formula-button">Show formula ∨</button>
+      <div class="formula-div">
+        <p class="formula-title">Fahrenheit to Celsius formula :</p>
+        <p class="formula-content">°C = (°F - 32) &times; 5 &divide; 9</p>
+        <p class="formula-title">Celsius to Fahrenheit formula :</p>
+        <p class="formula-content">°F = (°C &times; 9 &divide; 5) + 32</p>
+      </div>
+    </div>
+    <div class="show-working">
+      <button onclick="showWorking ()" class="working-button">Show working ∨</button>
+      <div class="working-div">
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
